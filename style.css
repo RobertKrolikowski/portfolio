@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+}
+
+/* NAV */
+nav {
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #58a6ff;
+}
+
+/* TEXT */
+h1 {
+    color: #58a6ff;
+}
+/* h1 {
+    background: linear-gradient(90deg, #58a6ff, #00ffd0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+
+h2 {
+    margin-bottom: 15px;
+    color: #58a6ff;
+}
+
+.subtitle {
+    color: #8b949e;
+}
+
+/* TAGS */
+.tags span {
+    display: inline-block;
+    background: #161b22;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #30363d;
+}
+
+/* CARD */
+.card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid #30363d;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #238636;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* LINKS */
+a {
+    color: #58a6ff;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    color: #8b949e;
+}
+
+/* ANIMACJA */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* GALERIA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* NAV LINK ACTIVE HOVER */
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #c9d1d9;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+/* LEPSZY BUTTON */
+.btn:hover {
+    background: #2ea043;
+}
+
