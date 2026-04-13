@@ -120,7 +120,7 @@ a {
 /* ANIMACJA */
 .fade-in {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(40px);
     transition: 0.6s;
 }
 
@@ -208,4 +208,54 @@ nav a:hover {
 .bounce {
     animation: bounce 0.4s ease;
 }
+
+/* DROPDOWN */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #21262d;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 
