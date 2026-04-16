@@ -86,6 +86,14 @@ h2 {
     color: #8b949e;
 }
 
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
 /* TAGS */
 .tags span {
     display: inline-block;
@@ -135,14 +143,26 @@ a {
 
 /* ANIMACJA */
 .fade-in {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.6s;
-}
-
-.fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+body.has-animations .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.85s ease-out, transform 0.85s ease-out;
+}
+
+body.has-animations .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    body.has-animations .fade-in {
+        transform: translateY(30px);
+        transition-duration: 1s;
+    }
 }
 
 /* GALERIA */
@@ -246,7 +266,7 @@ nav a:hover {
 
 /* DROPDOWN */
 
- .dropdown {
+.dropdown {
     position: relative;
 }
 
@@ -258,6 +278,25 @@ nav a:hover {
     font-weight: 500;
     cursor: pointer;
     transition: 0.2s;
+}
+
+.dropbtn {
+    background: transparent;
+    border: 0;
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline;
+    vertical-align: baseline;
+    padding: 0;
+}
+
+.dropbtn:focus-visible {
+    outline: 2px solid #58a6ff;
+    outline-offset: 4px;
+    border-radius: 4px;
 }
 
 
@@ -300,6 +339,13 @@ nav a:hover {
     pointer-events: auto;
 }
 
+.dropdown:focus-within .dropdown-content,
+.dropdown.open .dropdown-content {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
 /* underline hover animation */
 .nav-links a::after,
 .dropbtn::after {
@@ -314,12 +360,31 @@ nav a:hover {
 }
 
 .nav-links a:hover::after,
-.dropbtn:hover::after {
+.dropbtn:hover::after,
+.dropbtn:focus-visible::after {
     width: 100%;
 }
 
 /* HOVER COLOR */
 .nav-links a:hover,
-.dropbtn:hover {
+.dropbtn:hover,
+.dropbtn:focus-visible {
     color: #58a6ff;
+}
+
+.support-hero {
+    align-items: center;
+}
+
+.support-avatar {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .support-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
