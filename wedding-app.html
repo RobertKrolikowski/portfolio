@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cheers Wedding App to projekt aplikacji do planowania wesela. Zobacz opis, zakres funkcji i wykorzystane technologie.">
+    <meta name="author" content="Robert Królikowski">
+    <meta name="keywords" content="ASP.NET Core, C#, PostgreSQL, Docker, Wedding App, Portfolio">
+    <meta property="og:title" content="Cheers Wedding App - Robert Królikowski">
+    <meta property="og:description" content="Projekt aplikacji webowej wspierającej organizację wesela, budżetu i listy gości.">
+    <meta property="og:image" content="https://robertkrolikowski.github.io/portfolio/assets/avatar.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robertkrolikowski.github.io/portfolio/wedding-app.html">
+
+    <title>Cheers Wedding App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a class="logo-link" href="index.html" aria-label="Strona główna">
+            <img src="assets/avatar.jpg" class="logo-avatar" alt="" aria-hidden="true">
+            <span class="logo-text">RK</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="cv.html">CV</a>
+
+            <div class="dropdown">
+                <button class="dropbtn" type="button" aria-haspopup="true" aria-expanded="false">Projekty ▾</button>
+
+                <div class="dropdown-content">
+                    <a href="wisielec.html">Wisielec</a>
+                    <a href="clicker.html">Clicker</a>
+                    <a href="wedding-app.html">Cheers</a>
+                </div>
+            </div>
+
+            <a href="wsparcie.html">Wsparcie</a>
+        </div>
+    </div>
+</nav>
+
+<section class="container">
+    <h1>Cheers Wedding App</h1>
+
+    <p class="subtitle">Aplikacja webowa wspierająca pary młode w planowaniu listy gości, budżetu i zadań związanych z organizacją wesela.</p>
+
+    <div class="project-meta">
+        <span class="status-badge">Projekt wstrzymany</span>
+        <span>ASP.NET Core / C# / PostgreSQL / Docker</span>
+    </div>
+</section>
+
+<section class="container fade-in">
+    <h2>Opis</h2>
+    <p>
+        „Cheers Wedding App” to projekt aplikacji webowej przygotowanej z myślą o młodych parach,
+        które chcą uporządkować w jednym miejscu najważniejsze elementy związane z organizacją wesela.
+        Celem projektu było stworzenie narzędzia ułatwiającego planowanie wydatków, zarządzanie listą gości,
+        kontrolę harmonogramu oraz realizację zadań prowadzących do przygotowania całego wydarzenia.
+    </p>
+    <p class="mt-12">
+        Projekt rozwijałem w technologii ASP.NET Core z wykorzystaniem PostgreSQL jako bazy danych oraz
+        Dockera do przygotowania spójnego środowiska uruchomieniowego. Skupiałem się głównie na zaplanowaniu
+        architektury aplikacji backendowej oraz logicznym podziale modułów odpowiadających za konkretne obszary,
+        takie jak goście, budżet, zadania i przebieg przygotowań.
+    </p>
+    <p class="mt-12">
+        Obecnie rozwój projektu jest czasowo wstrzymany, ale sam koncept pozostaje aktualny i w przyszłości
+        może zostać rozwinięty o kolejne funkcje wspierające użytkowników w planowaniu całego wydarzenia.
+    </p>
+</section>
+
+<section class="container fade-in">
+    <h2>Najważniejsze założenia</h2>
+
+    <div class="card">
+        <h3>Centralny panel organizacyjny</h3>
+        <p>Jedno miejsce do śledzenia postępów, najbliższych zadań oraz najważniejszych informacji związanych z przygotowaniami.</p>
+    </div>
+
+    <div class="card">
+        <h3>Kontrola budżetu</h3>
+        <p>Możliwość planowania kosztów, kontrolowania wydatków oraz analizowania budżetu w podziale na kategorie.</p>
+    </div>
+
+    <div class="card">
+        <h3>Zarządzanie listą gości</h3>
+        <p>Obsługa zaproszeń, statusów RSVP oraz podstawowych informacji organizacyjnych dotyczących uczestników.</p>
+    </div>
+</section>
+
+<section class="container fade-in">
+    <h2>Planowane funkcjonalności</h2>
+    <ul>
+        <li>Zarządzanie listą gości wraz ze statusami zaproszeń</li>
+        <li>Checklista przygotowań do wesela</li>
+        <li>Zarządzanie budżetem wydarzenia</li>
+        <li>Dashboard postępów organizacji</li>
+        <li>Odliczanie do daty ślubu</li>
+        <li>Planowanie stołów i rozmieszczenia gości</li>
+        <li>Lista prezentów oraz inspiracji</li>
+        <li>Kalendarz organizacyjny z podziałem na etapy</li>
+    </ul>
+</section>
+
+<section class="container fade-in">
+    <h2>Tech Stack</h2>
+    <div class="tags">
+        <span>ASP.NET Core</span>
+        <span>C#</span>
+        <span>PostgreSQL</span>
+        <span>Docker</span>
+        <span>REST API</span>
+    </div>
+</section>
+
+<section class="container fade-in">
+    <h2>Architektura i dane</h2>
+    <p>
+        W projekcie została zaplanowana relacyjna baza danych obejmująca najważniejsze obszary związane
+        z organizacją wesela oraz codziennym korzystaniem z aplikacji.
+    </p>
+    <ul class="mt-12">
+        <li>Użytkownicy i profile pary młodej</li>
+        <li>Lista gości i statusy odpowiedzi</li>
+        <li>Budżet i kategorie wydatków</li>
+        <li>Checklisty oraz zadania organizacyjne</li>
+        <li>Harmonogram wydarzenia oraz plan stołów</li>
+    </ul>
+</section>
+
+<section class="container fade-in">
+    <h2>Czego nauczył mnie ten projekt</h2>
+    <ul>
+        <li>Projektowania większej aplikacji backendowej</li>
+        <li>Planowania struktury relacyjnej bazy danych</li>
+        <li>Pracy z Dockerem i środowiskiem developerskim</li>
+        <li>Dzielenia produktu na moduły funkcjonalne</li>
+        <li>Projektowania API dla aplikacji webowej</li>
+    </ul>
+</section>
+
+<section class="container fade-in">
+    <h2>Plan rozwoju</h2>
+    <ul>
+        <li>Powrót do rozwoju dashboardu użytkownika</li>
+        <li>Rozbudowa modułu gości i zaproszeń</li>
+        <li>Dodanie bardziej szczegółowego kalendarza wydarzeń</li>
+        <li>Rozszerzenie modułu inspiracji i planowania</li>
+        <li>Publikacja wersji demonstracyjnej online</li>
+    </ul>
+</section>
+
+<footer class="container footer">
+    <p>© <span id="year"></span> Robert Królikowski</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
